@@ -24,6 +24,8 @@ const afterRender = (context) => {
 	}
 
 	const linkDiv = document.createElement("div");
+	console.log('linkDiv');
+	console.log(linkDiv);
 
 	// Create custom checkbox
 	const customCheckbox = createCustomCheckbox();
