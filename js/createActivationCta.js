@@ -2,9 +2,11 @@ const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }
 	const activateDiv = document.createElement('div');
 	activateDiv.className = 'subHeaderDiv';
 
-	const activateText = (document.createElement('p').textContent = CONTENT.activation.text);
+	const activateText = document.createElement('p');
+	activateText.textContent = CONTENT.activation.text;
 
-	const activateCta = (document.createElement('a').textContent = CONTENT.activation.cta);
+	const activateCta = document.createElement('a');
+	activateCta.textContent = CONTENT.activation.cta;
 	activateCta.className = 'mgmLink';
 
 	const activateCtaEventListener = () => {
