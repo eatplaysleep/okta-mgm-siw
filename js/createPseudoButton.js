@@ -18,7 +18,7 @@ const pseudoButtonEventListener = e => {
 	rippleElement.style.left = _x + 'px';
 	rippleElement.style.top = _y + 'px';
 
-	_pseudoButton.appendChild(rippleElement);
+	pseudoButton.appendChild(rippleElement);
 
 	setTimeout(function () {
 		rippleElement.remove();
@@ -41,7 +41,7 @@ const createPseudoButton = () => {
 		: null;
 
 	pseudoButton.addEventListener('click', pseudoButtonEventListener);
-	pseudoButtonContainer.appendChild(_pseudoButton);
+	pseudoButtonContainer.appendChild(pseudoButton);
 
 	return pseudoButtonContainer;
 };
