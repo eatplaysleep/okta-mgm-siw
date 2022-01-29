@@ -24,8 +24,6 @@ const afterRender = (context) => {
 	}
 
 	const linkDiv = document.createElement("div");
-	console.log('linkDiv');
-	console.log(linkDiv);
 
 	// Create custom checkbox
 	const customCheckbox = createCustomCheckbox();
@@ -50,6 +48,10 @@ const afterRender = (context) => {
 			break;
 	}
 
+	console.log('linkDiv');
+	console.log(linkDiv);
+	console.log('_footer');
+	console.log(_footer);
 	_footer.appendChild(linkDiv);
 
 	document.querySelector(".link").addEventListener("mouseover", () => {
