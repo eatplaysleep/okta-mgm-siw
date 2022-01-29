@@ -34,8 +34,8 @@ const buildFormElements = async (_context) => {
 				case 'lastName':
 					_formInputs[i].setAttribute('autocomplete', 'family-name');
 					break;
-				// case "birthDate":
-				//  _formInputs[i].setAttribute("pattern", "[0-9]*")
+				case "birthDate":
+					 _formInputs[i].setAttribute("pattern", "[0-9]*")
 			}
 
 			inputs.push(_formInputs[i]);
