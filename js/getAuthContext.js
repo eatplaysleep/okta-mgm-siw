@@ -1,6 +1,8 @@
 const getAuthContext = () => {
 	if (OktaUtil) {
-		const { target: { clientId }, authentication: { request } } = OktaUtil.getRequestContext();
+		const { target = {}, authentication = {} } = OktaUtil.getRequestContext() || {};
+		const { clientId } = target || {};
+		const { request } = authentication || {};
 
 		const { scope, redirect_uri } = request || {};
 
