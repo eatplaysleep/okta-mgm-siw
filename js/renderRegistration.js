@@ -1,5 +1,5 @@
 const renderRegistration = async (args) => {
-	if (!activation) {
+	if (!isActivation) {
 		document.getElementsByClassName('o-form-fieldset')[5].style.display = 'none';
 	}
 
