@@ -1,7 +1,7 @@
 const afterRender = (context) => {
 
 	// Create 'pseudo' submit button
-	const _pseudoButtonContainer = createPseudoButton();
+	_pseudoButtonContainer = createPseudoButton();
 
 	// Append 'pseudo' submit button to submitButton
 	_submitButton && _submitButton.parentNode.appendChild(_pseudoButtonContainer);

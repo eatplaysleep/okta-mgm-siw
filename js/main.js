@@ -65,6 +65,7 @@ oktaSignIn.renderEl(
 
 // Widget Globals //
 
+var _pseudoButtonContainer;
 var _submitButton = document.querySelector('.button.button-primary');
 var _footer = document.querySelector('.auth-footer');
 var _authContentNode = document.querySelector('.o-form-fieldset-container');
