@@ -1,6 +1,6 @@
 const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }) => {
 	const activateDiv = document.createElement('div');
-	activateDiv.className = 'subHeaderDiv';
+	activateDiv.className = 'activateDiv';
 
 	const activateText = document.createElement('p');
 	activateText.textContent = CONTENT.activation.text;
@@ -67,7 +67,7 @@ const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }
 	activateDiv.appendChild(activateCta);
 
 	document
-		.querySelector('.o-form-CONTENT')
+		.querySelector('.o-form-content')
 		.insertBefore(
 			activateDiv,
 			document.querySelector('.o-form-error-container')
