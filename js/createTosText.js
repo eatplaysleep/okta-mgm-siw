@@ -23,7 +23,7 @@ const createTosText = async () => {
 	agreementA1.setAttribute('href', CONTENT.tos.rules.href);
 
 	const agreementA2 = document.createElement('a');
-	agreementA2.textContent = tosText.privacy.p;
+	agreementA2.textContent = CONTENT.tos.privacy.p;
 	agreementA2.target = '_blank';
 	agreementA2.setAttribute('href', CONTENT.tos.privacy.href);
 
