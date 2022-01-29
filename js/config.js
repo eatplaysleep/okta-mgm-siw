@@ -1,4 +1,4 @@
-let widgetConfig = {
+const widgetConfig = {
     features: {
       router: true,
       securityImage: false,
