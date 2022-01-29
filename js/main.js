@@ -65,10 +65,10 @@ oktaSignIn.renderEl(
 
 // Widget Globals //
 
-const _submitButton = document.querySelector('.button.button-primary');
-const _footer = document.querySelector('.auth-footer');
-const _authContentNode = document.querySelector('.o-form-fieldset-container');
-const _formInputs = document.getElementsByTagName('input');
+var _submitButton = document.querySelector('.button.button-primary');
+var _footer = document.querySelector('.auth-footer');
+var _authContentNode = document.querySelector('.o-form-fieldset-container');
+var _formInputs = document.getElementsByTagName('input');
 
 // functions
 // on.ready
