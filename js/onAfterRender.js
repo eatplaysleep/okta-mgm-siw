@@ -1,5 +1,7 @@
 oktaSignIn.on("afterRender", function (context) {
 	console.log("afterRender, " + context.controller)
+	console.log('afterRender _footer');
+	console.log(_footer);
 
 	if (!afterRenderTriggered) {
 		afterRender(context);
