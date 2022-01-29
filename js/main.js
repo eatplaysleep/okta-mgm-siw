@@ -2,7 +2,7 @@
 // constants
 // getAuthContext()
 
-const config = OktaUtil.getSignInWidgetConfig();
+var config = OktaUtil.getSignInWidgetConfig();
 const loginContainer = document?.getElementById("okta-login-container");
 const { clientId, scopes, redirect_uri } = getAuthContext();
 const isRegistration = scopes?.includes(REGISTRATION_SCOPE) || false;
