@@ -4,7 +4,9 @@ const afterRender = async (context) => {
 	_pseudoButtonContainer = await createPseudoButton();
 
 	// Append 'pseudo' submit button to submitButton
-	_submitButton && _submitButton.parentNode.appendChild(_pseudoButtonContainer);
+	if (_submitButton && _pseudoButtonContainer) {
+		_submitButton?.parentNode?.appendChild(_pseudoButtonContainer);
+	}
 
 	_footer && _footer.children[0].innerText === "Need help signing in?"
 		? _authContentNode.insertBefore(_footer, _authContentNode.children[2])
