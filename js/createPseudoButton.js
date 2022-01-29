@@ -10,7 +10,7 @@ const pseudoButtonEventListener = e => {
 		e.target.offsetTop -
 		document.querySelector('.auth-content').offsetTop -
 		document.querySelector('#body-container').offsetTop -
-		document.querySelector('._pseudoButtonContainer').offsetTop;
+		document.querySelector('.pseudoButtonContainer').offsetTop;
 
 	let rippleElement = document.createElement('span');
 
@@ -29,10 +29,10 @@ const pseudoButtonEventListener = e => {
 
 const createPseudoButton = () => {
 	const pseudoButtonContainer = document.createElement('div');
-	pseudoButtonContainer.className = '_pseudoButtonContainer';
+	pseudoButtonContainer.className = 'pseudoButtonContainer';
 
 	const pseudoButton = document.createElement('a');
-	pseudoButton.className = '_pseudoButton';
+	pseudoButton.className = 'pseudoButton';
 
 	_submitButton
 		? _submitButton.innerHTML !== ''
