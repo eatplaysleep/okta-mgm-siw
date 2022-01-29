@@ -8,7 +8,7 @@ const createTosCheckbox = async () => {
 	cb2Input.setAttribute('name', 'tosAccept');
 	cb2Label.setAttribute('for', 'tosAccept');
 
-	cb2Label.appendChild(createCustomCheckbox());
+	cb2Label.appendChild(await createCustomCheckbox());
 
 	cb2Div.appendChild(cb2Input);
 	cb2Div.appendChild(cb2Label);

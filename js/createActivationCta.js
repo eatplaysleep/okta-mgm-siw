@@ -1,4 +1,4 @@
-const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }) => {
+const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs, _borders }) => {
 	const activateDiv = document.createElement('div');
 	activateDiv.className = 'activateDiv';
 
@@ -10,14 +10,8 @@ const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }
 	activateCta.className = 'mgmLink';
 
 	const activateCtaEventListener = () => {
-		for (
-			let i = 0;
-			i < document.querySelector('#subschemas-password')?.children?.length;
-			i++
-		) {
-			document.querySelector('#subschemas-password').children[
-				i
-			].children[0].className = 'default-schema';
+		for ( let i = 0; i < document.querySelector('#subschemas-password')?.children?.length; i++ ) {
+			document.querySelector('#subschemas-password').children[i].children[0].className = 'default-schema';
 		}
 
 		isActivation = true;
@@ -25,7 +19,7 @@ const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }
 		document.querySelector('.okta-form-title').textContent = CONTENT.activation.title;
 		document.querySelector('.activateDiv').style.display = 'none';
 
-		for (let i = 0; i < 6; i++) {
+		for ( let i = 0; i < 6; i++ ) {
 			_inputs[i].value = '';
 			if (_inputs[i]?.ariaLabel?.slice(-1) !== '*') {
 				_inputValidation[i] = 4;
@@ -40,11 +34,7 @@ const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }
 			_svgs[i].style.display = 'none';
 		}
 
-		for (
-			let i = document.getElementsByClassName('okta-form-input-error').length;
-			i > 0;
-			i--
-		) {
+		for ( let i = document.getElementsByClassName('okta-form-input-error').length; i > 0; i-- ) {
 			document.getElementsByClassName('okta-form-input-error')[i - 1].remove();
 		}
 
