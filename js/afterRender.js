@@ -48,10 +48,6 @@ const afterRender = (context) => {
 			break;
 	}
 
-	console.log('linkDiv');
-	console.log(linkDiv);
-	console.log('_footer');
-	console.log(_footer);
 	_footer.appendChild(linkDiv);
 
 	document.querySelector(".link").addEventListener("mouseover", () => {
