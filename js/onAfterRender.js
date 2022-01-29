@@ -1,4 +1,4 @@
-oktaSignIn.on("afterRender", function (context) {
+oktaSignIn.on("afterRender", async function (context) {
 	console.log("afterRender, " + context.controller)
 
 	if (!_submitButton) {
@@ -15,7 +15,7 @@ oktaSignIn.on("afterRender", function (context) {
 	}
 
 	if (!afterRenderTriggered) {
-		afterRender(context);
+		await afterRender(context);
 	}
 
 	if ((registrationTriggered || activationTriggered) && context.controller === "primary-auth") {

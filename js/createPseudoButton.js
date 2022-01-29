@@ -27,7 +27,7 @@ const pseudoButtonEventListener = e => {
 	_submitButton.click();
 };
 
-const createPseudoButton = () => {
+const createPseudoButton = async () => {
 	const pseudoButtonContainer = document.createElement('div');
 	pseudoButtonContainer.className = 'pseudoButtonContainer';
 

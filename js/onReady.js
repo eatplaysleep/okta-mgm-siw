@@ -1,4 +1,4 @@
-oktaSignIn.on("ready", function (context) {
+oktaSignIn.on("ready", async function (context) {
 	console.log("ready, " + context?.controller)
 
 	if (context?.controller && isLoginHidden) {
@@ -11,7 +11,7 @@ oktaSignIn.on("ready", function (context) {
 
 	if (context?.controller === "registration") {
 
-		afterRender(context);
+		await afterRender(context);
 
 		afterRenderTriggered = true;
 	}

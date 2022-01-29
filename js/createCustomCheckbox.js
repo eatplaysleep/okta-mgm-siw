@@ -1,5 +1,5 @@
 // A div w/ an input and label must be created. Then this generic checkbox can be appended to the LABEL.
-const createCustomCheckbox = () => {
+const createCustomCheckbox = async () => {
 
 	const cbSpan = document.createElement('span');
 	const svg = document.createElement('svg');

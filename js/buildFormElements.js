@@ -10,7 +10,7 @@ const createFormLabelDiv = (inputPlaceholder) => {
 	return _labelDiv;
 };
 
-const buildFormElements = (_context) => {
+const buildFormElements = async (_context) => {
 	const inputs = [];
 	const inputValidation = [];
 	const borders = [];
@@ -40,10 +40,11 @@ const buildFormElements = (_context) => {
 
 			inputs.push(_formInputs[i]);
 
-			context.controller === 'registration' &&
-				inputs[i].ariaLabel.slice(-1) !== '*'
-				? inputValidation.push(4)
-				: inputValidation.push(0);
+			if (context.controller === 'registration' && inputs[i].ariaLabel.slice(-1) !== '*') {
+				inputValidation.push(4);
+			} else {
+				inputValidation.push(0);
+			}
 
 			svgs.push(errorSvg.cloneNode(true));
 

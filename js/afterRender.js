@@ -1,7 +1,7 @@
-const afterRender = (context) => {
+const afterRender = async (context) => {
 
 	// Create 'pseudo' submit button
-	_pseudoButtonContainer = createPseudoButton();
+	_pseudoButtonContainer = await createPseudoButton();
 
 	// Append 'pseudo' submit button to submitButton
 	_submitButton && _submitButton.parentNode.appendChild(_pseudoButtonContainer);
@@ -10,7 +10,7 @@ const afterRender = (context) => {
 		? _authContentNode.insertBefore(_footer, _authContentNode.children[2])
 		: null;
 
-	const { _inputs, _inputValidation, _labels, _borders, _svgs, _context } = buildFormElements(context);
+	const { _inputs, _inputValidation, _labels, _borders, _svgs, _context } = await buildFormElements(context);
 
 	if (_inputs?.length === 0) {
 		_submitButton ? _submitButton.style.display = "none" : null;
@@ -26,7 +26,7 @@ const afterRender = (context) => {
 	const linkDiv = document.createElement("div");
 
 	// Create custom checkbox
-	const customCheckbox = createCustomCheckbox();
+	const customCheckbox = await createCustomCheckbox();
 
 	switch (_context.controller) {
 		case "primary-auth":
@@ -85,7 +85,7 @@ const afterRender = (context) => {
 	document.getElementsByClassName("beacon-container")[0].style.display = "none";
 
 	if (_context.controller === "registration") {
-		renderRegistration({ _inputs, _inputValidation, _labels, _svgs });
+		await renderRegistration({ _inputs, _inputValidation, _labels, _svgs });
 	}
 
 	for (let i = 0; i < _inputs.length; i++) {

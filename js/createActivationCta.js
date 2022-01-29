@@ -1,4 +1,4 @@
-const createActivationCta = ({ _inputs, _inputValidation, _labels, _svgs }) => {
+const createActivationCta = async ({ _inputs, _inputValidation, _labels, _svgs }) => {
 	const activateDiv = document.createElement('div');
 	activateDiv.className = 'subHeaderDiv';
 

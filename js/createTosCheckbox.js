@@ -1,4 +1,4 @@
-const createTosCheckbox = () => {
+const createTosCheckbox = async () => {
 	const cb2Div = document.createElement('div');
 	const cb2Input = document.createElement('input');
 	const cb2Label = document.createElement('label');

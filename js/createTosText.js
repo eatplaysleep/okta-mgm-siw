@@ -1,4 +1,4 @@
-const createTosText = () => {
+const createTosText = async () => {
 	const agreementDiv = document.createElement('div');
 	agreementDiv.className = 'agreementDiv';
 

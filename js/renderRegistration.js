@@ -1,4 +1,4 @@
-const renderRegistration = (args) => {
+const renderRegistration = async (args) => {
 	if (!activation) {
 		document.getElementsByClassName('o-form-fieldset')[5].style.display = 'none';
 	}
@@ -9,9 +9,9 @@ const renderRegistration = (args) => {
 		isActivation = false;
 	});
 
-	createActivationCta(args);
-	createTosCheckbox();
-	createTosText();
+	await createActivationCta(args);
+	await createTosCheckbox();
+	await createTosText();
 
 	if (activationTriggered) {
 		document.querySelector('.mgmLink').click();
