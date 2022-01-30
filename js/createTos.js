@@ -51,11 +51,11 @@ const createTos = async () => {
 	agreementDiv.className = 'agreementDiv';
 
 	const { cb2Input, cb2Label } = await createTosCheckbox();
-	const agreementDiv = await createTosAgreement();
+	const tosDiv = await createTosAgreement();
 
 	agreementDiv.appendChild(cb2Input);
 	agreementDiv.appendChild(cb2Label);
-	agreementDiv.appendChild(agreementDiv);
+	agreementDiv.appendChild(tosDiv);
 
 	document.querySelector('.o-form-fieldset-container').appendChild(agreementDiv);
 }
