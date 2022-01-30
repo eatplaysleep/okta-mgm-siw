@@ -7,7 +7,7 @@ const createTosCheckbox = async () => {
 	cb2Input.setAttribute('name', 'tosAccept');
 	cb2Label.setAttribute('for', 'tosAccept');
 
-	cb2Label.appendChild(await createCustomCheckbox());
+	// cb2Label.appendChild(await createCustomCheckbox());
 
 	return { cb2Input, cb2Label };
 };
@@ -53,6 +53,7 @@ const createTos = async () => {
 	const { cb2Input, cb2Label } = await createTosCheckbox();
 	const tosDiv = await createTosAgreement();
 
+	agreementDiv.className = "custom-checkbox";
 	agreementDiv.appendChild(cb2Input);
 	agreementDiv.appendChild(cb2Label);
 	agreementDiv.appendChild(tosDiv);
