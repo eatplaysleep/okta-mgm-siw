@@ -12,6 +12,8 @@ const createTosCheckbox = async () => {
 
 	cb2Div.appendChild(cb2Input);
 	cb2Div.appendChild(cb2Label);
+
+	return cb2Div;
 };
 
 const createTos = async () => {
