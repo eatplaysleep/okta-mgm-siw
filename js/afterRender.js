@@ -87,7 +87,7 @@ const afterRender = async (context) => {
 	document.getElementsByClassName("beacon-container")[0].style.display = "none";
 
 	if (_context.controller === "registration") {
-		await renderRegistration({ _inputs, _inputValidation, _labels, _svgs });
+		await renderRegistration({ _inputs, _inputValidation, _labels, _svgs, _borders });
 	}
 
 	for (let i = 0; i < _inputs.length; i++) {
