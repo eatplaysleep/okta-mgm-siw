@@ -9,10 +9,10 @@ oktaSignIn.on("ready", async function (context) {
 		loginContainer.style.opacity = 1;
 	}
 
-	if (context?.controller === "registration") {
+	// if (context?.controller === "registration") {
 
-		await afterRender(context);
+	// 	await afterRender(context);
 
-		afterRenderTriggered = true;
-	}
+	// 	afterRenderTriggered = true;
+	// }
 });
