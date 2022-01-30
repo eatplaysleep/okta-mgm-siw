@@ -1,82 +1,103 @@
-<!-- Constants -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/constants.js"
-	type="text/javascript"></script>
-<!--  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-<!-- Widget Config -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/config.js"
-	type="text/javascript"></script>
-<!--  -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="none" />
 
-<!-- getAuthContext() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/getAuthContext.js"
-	type="text/javascript"></script>
-<!--  -->
+		<title>{{pageTitle}}</title>
+		{{{SignInWidgetResources}}}
+		<link rel="stylesheet" type="text/css"
+			href="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/css/styles.css" />
 
-<!-- main.js -->
-<script src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/main.js"
-	type="text/javascript"></script>
-<!--  -->
+	</head>
 
-<!-- createPseudoButton() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/createPseudoButton.js"
-	type="text/javascript"></script>
-<!--  -->
+	<body style="background-color: transparent">
+		<div id="body-container">
+			<div class="login-bg-image"></div>
+			<div id="okta-login-container"></div>
+		</div>
+		{{{OktaUtil}}}
+		<!-- Constants -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/constants.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- buildFormElements() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/buildFormElements.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- Widget Config -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/config.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- createCustomCheckbox() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/createCustomCheckbox.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- getAuthContext() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/getAuthContext.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- createActivationCta() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/createActivationCta.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- main.js -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/main.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- createTosCheckbox() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/createTosCheckbox.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- createPseudoButton() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/createPseudoButton.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- createTosText() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/createTosText.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- buildFormElements() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/buildFormElements.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- renderRegistration() -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/renderRegistration.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- createCustomCheckbox() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/createCustomCheckbox.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- afterRender -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/afterRender.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- createActivationCta() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/createActivationCta.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- on.ready -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/onReady.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- createTos() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/createTos.js"
+			type="text/javascript"></script>
+		<!--  -->
 
-<!-- on.afterRender -->
-<script
-	src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@1810a373be92f827dbfce64acdea86250dc8e8c3/js/onAfterRender.js"
-	type="text/javascript"></script>
-<!--  -->
+		<!-- renderRegistration() -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/renderRegistration.js"
+			type="text/javascript"></script>
+		<!--  -->
+
+		<!-- afterRender -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/afterRender.js"
+			type="text/javascript"></script>
+		<!--  -->
+
+		<!-- on.ready -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/onReady.js"
+			type="text/javascript"></script>
+		<!--  -->
+
+		<!-- on.afterRender -->
+		<script
+			src="https://cdn.jsdelivr.net/gh/eatplaysleep/okta-mgm-siw@63384210ef2afd2343b1ea24e4a8f8970a4112b2/js/onAfterRender.js"
+			type="text/javascript"></script>
+		<!--  -->
+
+
+	</body>
+
+</html>
