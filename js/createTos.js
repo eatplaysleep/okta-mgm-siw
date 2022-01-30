@@ -6,6 +6,7 @@ const createTosCheckbox = async () => {
 	cb2Input.setAttribute('type', 'checkbox');
 	cb2Input.setAttribute('name', 'tosAccept');
 	cb2Label.setAttribute('for', 'tosAccept');
+	cb2Label.style.color = "#777";
 
 	// cb2Label.appendChild(await createCustomCheckbox());
 
