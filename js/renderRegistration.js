@@ -10,8 +10,7 @@ const renderRegistration = async (args) => {
 	});
 
 	await createActivationCta(args);
-	await createTosCheckbox();
-	await createTosText();
+	await createTos();
 
 	if (activationTriggered) {
 		document.querySelector('.mgmLink').click();

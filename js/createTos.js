@@ -1,4 +1,20 @@
-const createTosText = async () => {
+const createTosCheckbox = async () => {
+	const cb2Div = document.createElement('div');
+	const cb2Input = document.createElement('input');
+	const cb2Label = document.createElement('label');
+
+	cb2Input.setAttribute('id', 'tosAccept');
+	cb2Input.setAttribute('type', 'checkbox');
+	cb2Input.setAttribute('name', 'tosAccept');
+	cb2Label.setAttribute('for', 'tosAccept');
+
+	cb2Label.appendChild(await createCustomCheckbox());
+
+	cb2Div.appendChild(cb2Input);
+	cb2Div.appendChild(cb2Label);
+};
+
+const createTos = async () => {
 	const agreementDiv = document.createElement('div');
 	agreementDiv.className = 'agreementDiv';
 
@@ -35,7 +51,7 @@ const createTosText = async () => {
 	agreementTextDiv.appendChild(agreementA2);
 	agreementTextDiv.appendChild(agreementP4);
 
-	agreementDiv.appendChild(cb2Div);
+	agreementDiv.appendChild(await createTosCheckbox());
 	agreementDiv.appendChild(agreementTextDiv);
 
 	document.querySelector('.o-form-fieldset-container').appendChild(agreementDiv);
