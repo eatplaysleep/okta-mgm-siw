@@ -1,5 +1,4 @@
 const createTosCheckbox = async () => {
-	const cb2Div = document.createElement('div');
 	const cb2Input = document.createElement('input');
 	const cb2Label = document.createElement('label');
 
@@ -10,15 +9,10 @@ const createTosCheckbox = async () => {
 
 	cb2Label.appendChild(await createCustomCheckbox());
 
-	cb2Div.appendChild(cb2Input);
-	cb2Div.appendChild(cb2Label);
-
-	return cb2Div;
+	return { cb2Input, cb2Label };
 };
 
-const createTos = async () => {
-	const agreementDiv = document.createElement('div');
-	agreementDiv.className = 'agreementDiv';
+const createTosAgreement = async () => {
 
 	const agreementTextDiv = document.createElement('div');
 	agreementTextDiv.className = 'agreementTextDiv';
@@ -49,8 +43,19 @@ const createTos = async () => {
 	agreementTextDiv.appendChild(agreementP3);
 	agreementTextDiv.appendChild(agreementA2);
 
-	agreementDiv.appendChild(await createTosCheckbox());
-	agreementDiv.appendChild(agreementTextDiv);
+	return agreementTextDiv;
+};
+
+const createTos = async () => {
+	const agreementDiv = document.createElement('div');
+	agreementDiv.className = 'agreementDiv';
+
+	const { cb2Input, cb2Label } = await createTosCheckbox();
+	const agreementDiv = await createTosAgreement();
+
+	agreementDiv.appendChild(cb2Input);
+	agreementDiv.appendChild(cb2Label);
+	agreementDiv.appendChild(agreementDiv);
 
 	document.querySelector('.o-form-fieldset-container').appendChild(agreementDiv);
-};
+}
