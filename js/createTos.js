@@ -32,9 +32,6 @@ const createTos = async () => {
 	const agreementP3 = document.createElement('p');
 	agreementP3.textContent = CONTENT.tos.text.p3;
 
-	const agreementP4 = document.createElement('p');
-	agreementP4.textContent = CONTENT.tos.text.p4;
-
 	const agreementA1 = document.createElement('a');
 	agreementA1.textContent = CONTENT.tos.rules.p;
 	agreementA1.target = '_blank';
@@ -51,7 +48,6 @@ const createTos = async () => {
 	agreementTextDiv.appendChild(agreementA2);
 	agreementTextDiv.appendChild(agreementP3);
 	agreementTextDiv.appendChild(agreementA2);
-	agreementTextDiv.appendChild(agreementP4);
 
 	agreementDiv.appendChild(await createTosCheckbox());
 	agreementDiv.appendChild(agreementTextDiv);

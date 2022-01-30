@@ -9,9 +9,8 @@ const CONTENT = {
 	tos: {
 		text: {
 			p1: 'I agree to the',
-			p2: ' and',
-			p3: ' (which governs the information I provide). Sections 3 and 5 of our',
-			p4: ' describe the categories of personal information we collect and the purposes for which it may be used.',
+			p2: ' (which governs the information I provide) and Sections 3 and 5 of our',
+			p3: ' (which describes the categories of personal information we collect and the purposes for which it may be used).',
 		},
 		rules: {
 			p: ' Program Rules',
