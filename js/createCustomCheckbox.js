@@ -28,6 +28,13 @@ const createCustomCheckbox = async () => {
 	path.setAttribute('stroke-linecap', 'round');
 	path.setAttribute('stroke-linejoin', 'round');
 
+	svg.className = 'checkbox';
+	svg.setAttribute('width', '44');
+	svg.setAttribute('height', '44');
+	svg.setAttribute('viewBox', '0 0 44 44');
+	svg.setAttribute('fill', 'none');
+	svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+
 	svg.appendChild(rect1);
 	svg.appendChild(rect2);
 	svg.appendChild(path);
